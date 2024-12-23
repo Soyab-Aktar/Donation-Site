@@ -1,5 +1,14 @@
 // Balance
-const siteBalance = convertToNum('site-balance');
-const NoakhaliBalance = convertToNum();
-const FeniBalance = convertToNum();
-const QuotaBliBalance = convertToNum();
+payment(
+  "NoakhaliBalanceBtn",
+  "NoakhaliBalanceInput",
+  "Noakhali-Balance",
+  "site-balance"
+);
+payment("FeniBalanceBtn", "FeniBalanceInput", "Feni-Balance", "site-balance");
+payment(
+  "QuotaBliBalanceBtn",
+  "QuotaBliBalanceInput",
+  "QuotaBli-Balance",
+  "site-balance"
+);
