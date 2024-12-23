@@ -1,5 +1,5 @@
 
-function payment(balanceBtnId, balanceInputId, balanceDisplayId, siteBalanceId) {
+function payment(balanceBtnId, balanceInputId, balanceDisplayId, siteBalanceId,title) {
     document.getElementById(balanceBtnId).addEventListener('click', function() {
         let siteBalance = convertToNum(siteBalanceId);
         const currentBalance = convertToNum(balanceDisplayId);
@@ -10,5 +10,6 @@ function payment(balanceBtnId, balanceInputId, balanceDisplayId, siteBalanceId) 
 
         update(balanceDisplayId, newBalance);
         update(siteBalanceId, siteBalance);
+        addtransaction(addMoney,title);
     });
 }

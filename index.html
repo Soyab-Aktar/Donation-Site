@@ -89,12 +89,17 @@
                 <div>
                   <img src="assets/coin.png" alt="" />
                 </div>
-                <a id="Noakhali-Balance" class="font-medium text-gray-500">50</a>
+                <a id="Noakhali-Balance" class="font-medium text-gray-500"
+                  >50</a
+                >
                 <a class="font-medium text-gray-500">BDT</a>
               </div>
               <h1 class="text-xl font-bold">
                 Donate for Flood at Noakhali, Bangladesh
               </h1>
+              <p id="title1" class="hidden">
+                Donated for famine-2024 at Noakhali
+              </p>
               <p class="py-5 font-light text-gray-500">
                 The recent floods in Noakhali have caused significant damage to
                 homes infrastructure. Your donation will help provide essential
@@ -104,14 +109,14 @@
                 the lives of those in need.
               </p>
               <input
-              id="NoakhaliBalanceInput"
+                id="NoakhaliBalanceInput"
                 type="text"
                 autocomplete="off"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
               <button
-              id="NoakhaliBalanceBtn"
+                id="NoakhaliBalanceBtn"
                 class="btn bg-lime-400 text-xl font-semibold hover:bg-lime-300 w-full"
               >
                 Donation
@@ -140,6 +145,7 @@
               <h1 class="text-xl font-bold">
                 Donate for Flood Relief in Feni,Bangladesh
               </h1>
+              <p id="title2" class="hidden">Donated for Flood Relief in Feni</p>
               <p class="py-5 font-light text-gray-500">
                 The recent floods in Feni have devastated local communities,
                 leading to severe disruption and loss. Your generous donation
@@ -157,7 +163,7 @@
                 class="input input-bordered w-full"
               />
               <button
-              id="FeniBalanceBtn"
+                id="FeniBalanceBtn"
                 class="btn bg-lime-400 text-xl font-semibold hover:bg-lime-300 w-full"
               >
                 Donation
@@ -180,12 +186,17 @@
                 <div>
                   <img src="assets/coin.png" alt="" />
                 </div>
-                <a id="QuotaBli-Balance" class="font-medium text-gray-500">2400</a>
+                <a id="QuotaBli-Balance" class="font-medium text-gray-500"
+                  >2400</a
+                >
                 <a class="font-medium text-gray-500">BDT</a>
               </div>
               <h1 class="text-xl font-bold">
                 Aid for Injured in the Quota Movement
               </h1>
+              <p id="title3" class="hidden">
+                Donated for Aid for Injured in the Quota Movement
+              </p>
               <p class="py-5 font-light text-gray-500">
                 The recent Quota movement has resulted in numerous injuries and
                 significant hardship for many individuals. Your support is
@@ -204,7 +215,7 @@
                 class="input input-bordered w-full"
               />
               <button
-              id="QuotaBliBalanceBtn"
+                id="QuotaBliBalanceBtn"
                 class="btn bg-lime-400 text-xl font-semibold hover:bg-lime-300 w-full"
               >
                 Donation
@@ -216,9 +227,7 @@
     </main>
 
     <!--! History -->
-    <section id="history-page" class="hidden">
-      <h1>History</h1>
-    </section>
+    <section id="history-page" class="hidden max-w-screen-xl mx-auto"></section>
 
     <script src="js/donationHistorybtn.js"></script>
     <script src="js/utility/colorChange.js"></script>
@@ -226,6 +235,8 @@
     <script src="js/utility/stringToNum.js"></script>
     <script src="js/utility/payment.js"></script>
     <script src="js/utility/updatebalance.js"></script>
+    <script src="js/utility/time.js"></script>
     <script src="js/donate.js"></script>
+    <script src="js/history.js"></script>
   </body>
 </html>
