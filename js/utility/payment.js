@@ -5,11 +5,19 @@ function payment(balanceBtnId, balanceInputId, balanceDisplayId, siteBalanceId,t
         const currentBalance = convertToNum(balanceDisplayId);
         const addMoney = convertToNum2(balanceInputId);
 
-        const newBalance = addMoney + currentBalance;
-        siteBalance = siteBalance - addMoney;
-
-        update(balanceDisplayId, newBalance);
-        update(siteBalanceId, siteBalance);
-        addtransaction(addMoney,title);
+        if(addMoney<siteBalance )
+        {
+            const newBalance = addMoney + currentBalance;
+            siteBalance = siteBalance - addMoney;
+    
+            update(balanceDisplayId, newBalance);
+            update(siteBalanceId, siteBalance);
+            addtransaction(addMoney,title);
+        }
+        else
+        {
+            alert('Please Check your balance !');
+            return;
+        }
     });
 }
