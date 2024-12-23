@@ -5,7 +5,7 @@ function payment(balanceBtnId, balanceInputId, balanceDisplayId, siteBalanceId,t
         const currentBalance = convertToNum(balanceDisplayId);
         const addMoney = convertToNum2(balanceInputId);
 
-        if(addMoney<siteBalance )
+        if(addMoney<siteBalance && addMoney>0 )
         {
             const newBalance = addMoney + currentBalance;
             siteBalance = siteBalance - addMoney;
@@ -13,10 +13,11 @@ function payment(balanceBtnId, balanceInputId, balanceDisplayId, siteBalanceId,t
             update(balanceDisplayId, newBalance);
             update(siteBalanceId, siteBalance);
             addtransaction(addMoney,title);
+            popup();
         }
         else
         {
-            alert('Please Check your balance !');
+            alert('Please Check your balance or input money !');
             return;
         }
     });
